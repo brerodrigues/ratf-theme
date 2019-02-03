@@ -4,11 +4,11 @@ layout: writeups-list
 {% for post in site.posts %}
                                 <td class="style14" nowrap="nowrap" width="62">{{ post.date | date: "%d-%m-%Y" }}</td>
                                 <td nowrap="nowrap" width="375">
-                                  <a href="{{ post.url | absolute_url }}" target="_blank" class="style15">
+                                  <a href="{{ post.external_link }}" target="_blank" class="style15">
                                     {{ post.title}}
                                   </a>
                                 </td>
                                 <td nowrap="nowrap" width="135">
-                                    <a href="/web/20090210054015/http://milw0rm.com/author/1828">{{ post.author }}</a>
+                                    <a href="{{ post.author_url }}">{{ post.author }}</a>
                                 </td>
 {% endfor %}
