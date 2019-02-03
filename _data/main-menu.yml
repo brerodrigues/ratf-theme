@@ -1,0 +1,14 @@
+menu_title: Main Menu
+itens:
+
+- title: home
+  url: /index
+  
+- title: membros
+  url: /member
+
+- title: recrutamento
+  url: /recruitment
+  
+- title: contato
+  url: /contact
