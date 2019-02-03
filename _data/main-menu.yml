@@ -2,13 +2,13 @@ menu_title: Main Menu
 itens:
 
 - title: home
-  url: /index
+  url: ratf-theme/index
   
 - title: membros
-  url: /member
+  url: ratf-theme/members
 
 - title: recrutamento
-  url: /recruitment
+  url: ratf-theme/recruitment
   
 - title: contato
-  url: /contact
+  url: ratf-theme/contact
