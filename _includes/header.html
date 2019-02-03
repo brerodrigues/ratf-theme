@@ -12,12 +12,9 @@
         <table border="0">
             <tr>
                 <td nowrap="nowrap">
-                    <!-- menu -->
-                    <b>[ <a href="/web/20090210054015/http://milw0rm.com/" target="_self">home</a> ]</b>
-                    <b>[ <a href="/web/20090210054015/http://milw0rm.com/contents.php" target="_self">membros</a> ]</b>
-                    <b>[ <a href="/web/20090210054015/http://milw0rm.com/platforms/" target="_self">recrutamento</a> ]</b>
-                    <b>[ <a href="/web/20090210054015/http://milw0rm.com/shellcode/" target="_self">contato</a> ]</b>
-                    <!-- menu -->
+                    {% for item in site.data.main-menu.itens %}
+                        <b>[ <a href="{{ item.url }}" target="_self">{{ item.title }}</a> ]</b>
+                    {% endfor %}  
                 </td>
             </tr>
         </table>
