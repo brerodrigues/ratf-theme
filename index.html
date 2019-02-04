@@ -3,13 +3,13 @@ layout: writeups-list
 ---
 {% for post in site.posts %}
                              <tr class="submit">
-                                <td class="style14" nowrap="nowrap" width="62">{{ post.date | date: "%d-%m-%Y" }}</td>
-                                <td nowrap="nowrap" width="375">
+                                <td class="style14">{{ post.date | date: "%d-%m-%Y" }}</td>
+                                <td>
                                   <a href="{{ post.external_link }}" target="_blank" class="style15">
                                     {{ post.title}}
                                   </a>
                                 </td>
-                                <td nowrap="nowrap" width="135">
+                                <td>
                                     <a href="{{ post.author_url }}">{{ post.author }}</a>
                                 </td>
                             </tr>
