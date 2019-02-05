@@ -137,7 +137,9 @@ b.hl2 {
 	border: thin solid #008000;
 	width: 90%;
 }
-
+.sub-main {
+        width: 95%;
+}
 @media only screen and (max-width: 600px) {
 	.sub-main {
 		width: 95%;
