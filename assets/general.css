@@ -118,6 +118,7 @@ b.hl2 {
 }
 .style14 {
 	font-size: 9px;
+	width: 12%;
 }
 .style15 {
 	font-size: 9px; 
@@ -134,4 +135,11 @@ b.hl2 {
 	background-color: #000000;
 	text-align: center;
 	border: thin solid #008000;
+	width: 90%;
+}
+
+@media only screen and (max-width: 600px) {
+	.sub-main {
+		width: 95%;
+	}
 }
