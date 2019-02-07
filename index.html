@@ -14,35 +14,46 @@ layout: writeups-list
                                 </td>
                             </tr>
 {% endfor %}
+
 <!-- post list -->
 {% for post in paginator.posts %}
-<li><a href="{{post.url | prepend: site.baseurl}}"><h3>{{post.title}}</h3></a></li>
+                             <tr class="submit">
+                                <td class="style14">{{ post.date | date: "%d-%m-%Y" }}</td>
+                                <td>
+                                  <a href="{{ post.external_link }}" target="_blank" class="style14">
+                                    {{ post.title}}
+                                  </a>
+                                </td>
+                                <td class="table-author">
+                                    <a href="{{ post.author_url }}">{{ post.author }}</a>
+                                </td>
+                            </tr>
 {% endfor %}
 
 
 <!-- pagination -->
-<ul class="post-list">
-  {% for post in paginator.posts %}
-    <li>
-      <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
+{% if paginator.total_pages > 1 %}
+<div class="pagination"> 
+  {% if paginator.previous_page %}
+    <a href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Prev</a>
+  {% else %}
+    <span>&laquo; Prev</span>
+  {% endif %}
 
-      <h2>
-        <a class="post-link" href="{{ post.url | relative_url }}">{{ post.title | escape }}</a>
-      </h2>
-
-      {{ post.excerpt }}
-    </li>
+  {% for page in (1..paginator.total_pages) %}
+    {% if page == paginator.page %}
+      <span class="webjeda">{{ page }}</span>
+    {% elsif page == 1 %}
+      <a href="/">{{ page }}</a>
+    {% else %}
+      <a href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+    {% endif %}
   {% endfor %}
 
-  <div class="pagination">
-    {% if paginator.previous_page %}
-      <a href="{{ paginator.previous_page_path }}" class="previous">&laquo; Previous</a>
-    {% endif %}
-
-    <span class="page_number">Page: {{ paginator.page }} of {{ paginator.total_pages }}</span>
-
-    {% if paginator.next_page %}
-      <a href="{{ paginator.next_page_path }}" class="next">Next &raquo;</a>
-    {% endif %}
-  </div>
-</ul>
+  {% if paginator.next_page %}
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Next &raquo;</a>
+  {% else %}
+    <span>Next &raquo;</span>
+  {% endif %}
+</div>
+{% endif %}
