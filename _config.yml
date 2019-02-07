@@ -2,3 +2,4 @@ title: RATF CTF TEAM
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
