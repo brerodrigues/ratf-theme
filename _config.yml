@@ -1,6 +1,6 @@
 title: RATF CTF TEAM
 
-paginate: 2
+paginate: 1
 paginate_path: /page:num/
 
 plugins:
