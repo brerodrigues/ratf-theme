@@ -9,36 +9,13 @@
                     <br>
                     <table bordercolor="#333333" align="center" border="0" class="sub-main">
                         <tbody>
+                            {% for item in site.data.members.itens %}
                             <tr class="style13">
                                 <td class="style13">
-                                    <div align="center"><a href="http://brerodrigues.github.io" target="_blank">-::brennords</a></div>
+                                    <div align="center"><a href="{{ item.url }}" target="_blank">-::{{ item.name }}</a></div>
                                 </td>
                             </tr>
-                            <tr class="style13">
-                                <td class="style13">
-                                    <div align="center"><a href="http://brerodrigues.github.io" target="_blank">-::Remote By Default Port</a></div>
-                                </td>
-                            </tr>
-                            <tr class="style13">
-                                <td class="style13">
-                                    <div align="center"><a href="/web/20090208172550/http://milw0rm.com/remote-by.php?platform=php" target="_self">-::Remote PHP Flaws </a></div>
-                                </td>
-                            </tr>
-                            <tr class="style13">
-                                <td class="style13">
-                                    <div align="center"><a href="/web/20090208172550/http://milw0rm.com/remote-by.php?platform=cgi" target="_self">-::Remote CGI Flaws</a></div>
-                                </td>
-                            </tr>
-                            <tr class="style13">
-                                <td class="style13">
-                                    <div align="center"><a href="/web/20090208172550/http://milw0rm.com/remote-by.php?platform=asp" target="_self">-::Remote ASP Flaws</a></div>
-                                </td>
-                            </tr>
-                            <tr class="style13">
-                                <td class="style13">
-                                    <div align="center"><a href="/web/20090208172550/http://milw0rm.com/exploits/browsers/" target="_self">-::Remote Browser Vuln Exploration</a></div>
-                                </td>
-                            </tr>
+                            {% endfor %}  
                         </tbody>
                     </table>
                     <br>
