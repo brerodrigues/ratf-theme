@@ -1,21 +1,7 @@
 ---
 layout: writeups-list
 ---
-{% for post in site.posts %}
-                             <!-- <tr class="submit">
-                                <td class="style14">{{ post.date | date: "%d-%m-%Y" }}</td>
-                                <td>
-                                  <a href="{{ post.external_link }}" target="_blank" class="style14">
-                                    {{ post.title}}
-                                  </a>
-                                </td>
-                                <td class="table-author">
-                                    <a href="{{ post.author_url }}">{{ post.author }}</a>
-                                </td>
-                            </tr> -->
-{% endfor %}
 
-<!-- post list -->
 {% for post in paginator.posts %}
                              <tr class="submit">
                                 <td class="style14">{{ post.date | date: "%d-%m-%Y" }}</td>
