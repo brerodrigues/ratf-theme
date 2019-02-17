@@ -6,3 +6,5 @@ paginate_path: /page:num/
 plugins:
   - jekyll-feed
   - jekyll-paginate
+
+theme: jekyll-theme-cayman
