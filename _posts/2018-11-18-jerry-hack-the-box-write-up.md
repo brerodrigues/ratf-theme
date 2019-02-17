@@ -1,5 +1,5 @@
 ---
-title: Jerry Hack The Box
+title: Jerry [Hack The Box]
 date: 2018-11-18 22:28
 author: brennords
 author_url: https://brerodrigues.github.io/
