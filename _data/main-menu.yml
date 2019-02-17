@@ -2,10 +2,10 @@ menu_title: Main Menu
 itens:
 
 - title: home
-  url: index
+  url: /index
   
 - title: membros
-  url: members
+  url: /members
   
 - title: contato
-  url: contact
+  url: /contact
