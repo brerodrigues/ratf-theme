@@ -1,5 +1,5 @@
 ---
-title: SimplePDF [hack.lu CTF 2016]
+title: Br@1n_Fuck [hack.lu CTF 2016]
 date: 2016-10-20 15:32
 author: brennords
 author_url: https://brerodrigues.github.io/
