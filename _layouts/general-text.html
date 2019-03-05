@@ -1,0 +1,18 @@
+{% include header.html %}
+        <table border="0" cellpadding="3" cellspacing="3" class="main">
+            <tr>
+                <td><img src="{{ "/assets/ratf_logo.png" | relative_url }}" alt="ratf" class="img-logo"></td>
+            </tr>
+            <tr>
+                <td>
+                    <b>[ {{ page.title }} ]</b>
+                    <br>
+                    <table bordercolor="#333333" align="center" border="0" class="sub-main">
+                        <tbody>
+							              <span class="style-12">
+                                {{ content }}
+							              </span>
+                        </tbody>
+                    </table>
+                    <br>
+{% include footer.html %}
