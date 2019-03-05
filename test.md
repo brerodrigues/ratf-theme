@@ -3,9 +3,11 @@ title: RATF History
 layout: general-text
 ---
 
-# RATF History
-
 Lorem ipsum dolor **sit amet**, consectetur *adipiscing elit*. Maecenas bibendum, justo vitae malesuada accumsan, turpis diam dictum tellus, ac blandit ex nisl a mi. Aliquam erat volutpat. Morbi et maximus est, vel fermentum dui. Suspendisse justo quam, interdum sit amet massa eget, tincidunt fringilla ultricies est, id rhoncus nisi placerat vitae. Sed nec volutpat nisl. Nulla id dignissim urna, suscipit dignissim purus.
+
+# Something Something
+
+Lorem ipsum dolor **sit amet**, consectetur *adipiscing elit*. Maecenas bibendum, justo vitae malesuada accumsan, turpis diam dictum tellus.
 
 ### Installation
 
